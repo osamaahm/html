@@ -1,42 +1,441 @@
-
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Html tutorial
-        </title>
+<html><head>
+        <meta charset="utf-8">
+        <title>Dhaka Education Board</title>
+        <link rel="stylesheet" href="//dhakaeducationboard.gov.bd/assets/admin/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="//dhakaeducationboard.gov.bd/assets/admin/plugins/datatables/dataTables.bootstrap.css">
+        <link rel="stylesheet" href="//dhakaeducationboard.gov.bd/assets/admin/dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="//dhakaeducationboard.gov.bd/assets/admin/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//dhakaeducationboard.gov.bd/assets/custom/css/layout.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="//dhakaeducationboard.gov.bd/assets/custom/img/favicon.png">
+        <script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+            var base_url = '//dhakaeducationboard.gov.bd/';
+        </script>
+        <style type="text/css">
+        .lang {
+                float: right;
+                margin: 10px;
+                color: white;
+                font-weight: bold;
+                border: 1px solid white;
+                border-radius: 3px;
+                padding: 3px 5px;
+                cursor: pointer;
+        }    
+        .lang a{
+            color: white;
+        }
+        .info-box-number {
+                font-size: 15px;
+                line-height: 26px;
+                font-weight: normal;
+        }
+        </style>
     </head>
     <body>
-        <h1 align= "center" style="background-color: darkkhaki ">This is a Basic Html Page</h1>
-        <p>
-            We have already learder below tags:
-        </p>    
-        <ol>
-            <li> html </li>
-            <li>head </li>
-            <li>title</li>
-            <li>body</li>
-            <li>paragraph</li>
-            <li>underline </li>
-            <li>italic</li>
-            <li> font</li>
-            <li>line break</li>
-            <li>ordered list</li>
-            <li>unordered list</li>
-            <li>list item</li>
-            <li>table</li>
-            <li>caption</li>
-            <li>table row</li>
-            <li>table header</li>
-            <li>table data </li>
-            <li>subscript</li>
-            <li>superscript</li> 
-            THE END
-        </ol>
+                <div class="main">
+            <div class="head_section">
+
+                <div class="logo">
+                    <img src="//dhakaeducationboard.gov.bd/assets/custom/img/logo.png" alt="">                
+                </div>
+                <div class="title">
+                    <div class="main_title">মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা</div>
+                    <div class="sub_title">Board of Intermediate and Secondary Education, Dhaka</div>
+                </div>
+                
+                <div class="lang"><a href="index.php?changelang=bangla">বাংলা</a> </div>
+                <div class="cb"></div>
+            </div>
+            <div class="news_section">
+                                    <section class="content" style="min-height: 0px;">
+                        <div class="row">
+                            <div class="col-lg-1">News:</div>
+                            <div class="col-lg-11">
+                                <marquee onmouseover="this.setAttribute('scrollamount', 0, 0);" onmouseout="this.setAttribute('scrollamount', 6, 0);" scrollamount="6">
+                                    <a href="//dhakaeducationboard.gov.bd/data/">জেএসসি পরীক্ষা ২০১৯ এর ধারাবাহিক পরীক্ষার বিষয়ভিত্তিক প্রাপ্ত মোট নম্বর আগামী ২৩ নভেম্বর, ২০১৯ তারিখের মধ্যে Entry শেষ করে Final Submit করার জন্য বিশেষভাবে অনুরোধ করা যাচ্ছে । উক্ত তারিখের মধ্যে Final Submit না করলে প্রাপ্ত নম্বর গ্রহণযোগ্য হবে না। ফল প্রক্রিয়াকরণে জটিলতা এড়ানোর জন্য সঠিক সময়ের মধ্যে Entry শেষ করে Final Submit করতে হবে। বিষয়ভিত্তিক পূর্ণমান (১০০/৫০) নিশ্চিত হয়ে নম্বর এন্ট্রি করে যাচাই করার পর Final Submit দিতে হবে। Final Submit করার পর বিষয়ভিত্তিক Final List মুদ্রণ করে স্বাক্ষর ও সীল দিয়ে পরীক্ষা নিয়ন্ত্রক বরাবর ২৪ নভেম্বর, ২০১৯ এর মধ্যে ডাকযোগে প্রেরণ করতে হবে।</a> &nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;<a href="http://dhakaeducationboard.gov.bd/data/20191107153838361916.pdf">২০১৮ সালে ৯ম শ্রেণিতে অধ্যয়নরত শিক্ষার্থীদের রেজিস্ট্রেশন সংক্রান্ত জরুরি বিজ্ঞপ্তি</a> &nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;<a href="//dhakaeducationboard.gov.bd/data/20191106145613101831.pdf">বৃত্তি/মেধাবৃত্তি খাতে ২০১৮-২০১৯ অর্থবছরে বরাদ্দকৃত অর্থ প্রদানের লক্ষে চেক গ্রহন প্রসঙ্গে।</a> &nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;<a href="http://dhakaeducationboard.gov.bd/data/20191030155201926529.pdf">নিম্ন মাধ্যমিক বিদ্যালয়, মাধ্যমিক বিদ্যালয় ও উচ্চমাধ্যমিক বিদ্যালয় (৬ষ্ঠ হতে ১০ম শ্রেণি পর্যন্ত) শিক্ষা প্রতিষ্ঠানসমূহে অতিরিক্ত ম্রেণি শাখা খোলা এবং স্বীকৃতি নবায়ন প্রসঙ্গে জরুরি বিজ্ঞপ্তি</a> &nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;<a href="//dhakaeducationboard.gov.bd/data/">জরুরিঃ লক্ষ করা যাচ্ছে বোর্ডের বিভিন্ন সেবা প্রদানের জন্য নির্ধারিত খাতে ফি জমা না দিয়ে ভিন্ন খাতে ফি জমা দেয়া হচ্ছে। এক খাতের অর্থ অন্য খাতে সমন্বয়  করার কোন সুযোগ নেই। এ বিষয়ে সংশ্লিষ্ট সকলকে সতর্কতার সাথে কাজ করার পরামর্শ দেয়া হলো।</a> &nbsp;&nbsp;&nbsp;***&nbsp;&nbsp;&nbsp;                                </marquee>
+                            </div>
+                        </div>
+                    </section>
+                                </div>
+                            <div class="menu_section">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="//dhakaeducationboard.gov.bd/"><div class="menu_item">Home</div></a></li><li><a href="#"><div class="menu_item">About Board</div></a><ul><li><a href="//dhakaeducationboard.gov.bd/index.php/site/cms/17"><div class="menu_item">History</div></a></li><li><a target="_blank" href="http://bdlaws.minlaw.gov.bd/print_sections_all.php?id=318"><div class="menu_item">Ordinance</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/Citizen_Charterd.pdf"><div class="menu_item">Citizen Charter</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/20170105170138844113.pdf"><div class="menu_item">Regulation, 2009 (Amendment)</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/SRO-99-Education Board-08 June 2009(4253-4284).pdf"><div class="menu_item">Regulation, 2009</div></a></li></ul></li><li><a href="#"><div class="menu_item">Forms</div></a><ul><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/Certificate_Section_Form.pdf"><div class="menu_item">Certificate Section Form</div></a></li><li><a href="#"><div class="menu_item">College Section▼</div></a><ul><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/1st_temporary_recognition.pdf"><div class="menu_item">1st Temporary Recognition</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/Equivalance_check_form .pdf"><div class="menu_item">Equivalence Check Form</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/recognition_renewal.pdf"><div class="menu_item">Recognition Renewal</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/college_form/Accademic_Affiliation_Form.pdf"><div class="menu_item">Academic Affiliation Form</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/college_form/Group_Subject_Ad.Class_sec.open_Form.pdf"><div class="menu_item">Group,Subject,Ad.Class sec. open Form</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/college_form/New_college_Stablish_Form.pdf"><div class="menu_item">New college Establish Form</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/college_form/Permission_for_college_education.pdf"><div class="menu_item">Permission for college education</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/college_form/BTC_2nd.pdf"><div class="menu_item">HSC 2nd Year BTC Form</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/college_form/BTC_1st.pdf"><div class="menu_item">HSC 1st Year BTC Form</div></a></li></ul></li><li><a href="#"><div class="menu_item">School Section▼</div></a><ul><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/BISHESH_COMMITEE_FORM_49(1).pdf"><div class="menu_item">Bishesh Commitee Form49(1)</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/DUPLICATE_REGISTRATION_BEFORE_FORM_1995-1996.pdf"><div class="menu_item">Duplicate Reg. Before Form(1995-96)</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/DUPLICATE_REGISTRATION_FROM_1995-1996.pdf"><div class="menu_item">Duplicate Reg. From</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/MANAGING_COMMITEE_SECTION_FORM_7_&amp;_8.pdf"><div class="menu_item">Managing Commitee Sec. Form(7&amp;8)</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/NIRBAHI_COMMITEE_SECTION_FORM_48(1).pdf"><div class="menu_item">Nirbahi Commitee Sec. Form48(1)</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/REGISTRATION_CORRECTION_FORM.pdf"><div class="menu_item">JSC &amp; SSC Reg. Correction Form</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/Apeal &amp; Arbitration From.pdf"><div class="menu_item">Appeal &amp; Arbitration From</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/school_form/school_tc_2018.pdf"><div class="menu_item">School TC Form 2018</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/৭_ও_৮ধারায়_গঠিত_ম্যানেজিং_কমিটি.pdf"><div class="menu_item">Managing committee form, under section 7 and 8</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/৪৮(১)ধারায়_গঠিত_নির্বাহী_কমিটি.pdf"><div class="menu_item">Special committee form under section 48 (1)</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/৪৯(১)ধারায়_গঠিত_বিশেষ_কমিটি.pdf"><div class="menu_item">Special committee form under section 49 (1)</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/school/জেএসসি_ও_এসএসসি_রেজিঃ_কার্ড_সংশোধন_ফর্ম.pdf"><div class="menu_item">JSC &amp; SSC reg. card correction form</div></a></li></ul></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/Certificate_Verification_Form.pdf"><div class="menu_item">Certificate Verification Form</div></a></li><li><a target="_blank" href="http://dhakaeducationboard.gov.bd/data/pic_link/Name_Correction_Form.pdf"><div class="menu_item">Name Correction Form</div></a></li></ul></li><li><a href="//dhakaeducationboard.gov.bd/index.php/site/cms/7"><div class="menu_item">Fees</div></a></li><li><a target="_blank" href="http://www.educationboardresults.gov.bd/"><div class="menu_item">Result Archive</div></a></li><li><a href="#"><div class="menu_item">Analytics</div></a><ul><li><a target="_blank" href="http://eboardresults.com/app/stud/?rtype=7"><div class="menu_item">Result Analytics</div></a></li><li><a target="_blank" href="http://eboardresults.com/app/stud/?rtype=6"><div class="menu_item">Institute Analytics</div></a></li></ul></li><li><a target="_blank" href="http://xiclassadmission.gov.bd/"><div class="menu_item">XI Admission</div></a></li><li><a href="//dhakaeducationboard.gov.bd/index.php/site/cms/6"><div class="menu_item">Contact Us</div></a></li><li><a target="_blank" href="http://efile.dhakaeducationboard.gov.bd/"><div class="menu_item">Login</div></a></li><li><a href="#"><div class="menu_item">Album</div></a><ul><li><a href="//dhakaeducationboard.gov.bd/index.php/site/album/9"><div class="menu_item">Welcome</div></a></li></ul></li>                        </ul>
+                    </div>
+                </div>
+                        <div class="body_section">
+                <div class="body_left">
+    
+<div class="chairman_corner">
+    <div class="box box-primary">
+        <div class="box-body box-profile">
+            <img class="profile-user-img img-responsive img-circle" src="https://dhakaeducationboard.gov.bd/assets/custom/img/chairman.jpg?1574613529" alt="User profile picture">
+            <h3 class="profile-username text-center" style="font-size: 18px;">প্রফেসর মু: জিয়াউল হক</h3>
+            <p class="text-muted text-center">Chairman</p>
+            <p style="text-align: justify; border-top:  1px solid #ddd; padding-top: 5px;">
+                প্রফেসর মু: জিয়াউল হক ১৯৬১ সালের ১ ডিসেম্বর বরিশাল জেলায় জন্মগ্রহণ করেন।
+                <span class="show_more"><a href="https://dhakaeducationboard.gov.bd/index.php/site/cms/22" class="btn btn-warning btn-xs">বিস্তারিত</a></span>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<div class="service_menu">
+    <a href="https://efile.dhakaeducationboard.gov.bd/index.php/eservice/menu">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-aqua">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/online.png">
+            </div>
+            <div class="info-box-content">
+                <div style="color:#c04707; font-weight: bold; font-size: 16px;" class="info-box-number">On-line Application</div>
+            </div>
+        </div>    
+    </a>
+
+    <!--<a href="http://xiclassadmission.gov.bd">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-success">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/esif.png">
+            </div>
+            <div class="info-box-content">
+                <div style="color:red; font-weight: bold; font-size: 20px;" class="info-box-number">XI Class Admission</div>
+            </div>
+        </div>    
+    </a>-->
+
+    <a href="https://erp.dhakaeducationboard.gov.bd/">
+        <div class="info-box info-box-small">
+            <div class="info-box-icon bg-aqua">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/esif.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">OEMS</div>
+            </div>
+        </div>    
+    </a>
+    <a href="https://erp.dhakaeducationboard.gov.bd/index.php/tc">
+        <div class="info-box info-box-small">
+            <div class="info-box-icon bg-green">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/esif.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">e-TC</div>
+            </div>
+        </div>    
+    </a>
+    <a href="//dhakaeducationboard.gov.bd/index.php/etif/">
+        <div class="info-box info-box-small">
+            <div class="info-box-icon bg-red">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/etif.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">e-TIF</div>
+            </div>
+        </div>    
+    </a>
+    <a href="https://erp.dhakaeducationboard.gov.bd/">
+        <div class="info-box info-box-small">
+            <div class="info-box-icon bg-green">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/esif.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">e-SIF</div>
+            </div>
+        </div>    
+    </a>
+
+    <a href="https://erp.dhakaeducationboard.gov.bd/">
+        <div class="info-box info-box-small">
+            <div class="info-box-icon bg-yellow">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/esif.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">e-FF</div>
+            </div>
+        </div>    
+    </a>
+
+   <!-- <a href="http://efile.dhakaeducationboard.gov.bd/">
+        <div class="info-box info-box-small">
+            <div class="info-box-icon bg-red">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/efile.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">e-File</div>
+            </div>
+        </div>    
+    </a>-->
+
+    <!--
+    <a href="http://esif.dhakaeducationboard.gov.bd">
+    <div class="info-box info-box-big">
+        <div class="info-box-icon bg-success">
+            <img src="//dhakaeducationboard.gov.bd/assets/custom/img/esif.png">
+        </div>
+        <div class="info-box-content">
+            <div class="info-box-number">e-SIF [SEC: 2014-15]</div>
+        </div>
+    </div>    
+</a>
+    -->
+    <a href="//dhakaeducationboard.gov.bd/index.php/site/subdomain">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-red">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/website.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">Institute Website</div>
+            </div>
+        </div>    
+    </a>
+    <a href=" http://result.dhakaeducationboard.gov.bd/app/">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-success">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/esif.png">
+            </div>
+            <div class="info-box-content">
+                <div style="color:red" class="info-box-number">Result[JSC,SSC,HSC]</div>
+            </div>
+        </div>    
+    </a>
+    <!-- <a href=" http://eboardresults.com/app/stud/?rtype=7">
+    <div class="info-box info-box-big">
+        <div class="info-box-icon bg-success">
+            <img src="//dhakaeducationboard.gov.bd/assets/custom/img/ana.png">
+        </div>
+        <div class="info-box-content">
+            <div style="color:green" class="info-box-number">Result Analytics</div>
+        </div>
+    </div>    
+</a>
+    <a href=" http://eboardresults.com/app/stud/?rtype=6">
+    <div class="info-box info-box-big">
+        <div class="info-box-icon bg-success">
+            <img src="//dhakaeducationboard.gov.bd/assets/custom/img/ana.png">
+        </div>
+        <div class="info-box-content">
+            <div style="color: #d39011 ;" class="info-box-number">Institute Analytics</div>
+        </div>
+    </div>    
+</a> -->
+
+    <!-- <a target="_blank" href="http://erp.dhakaeducationboard.gov.bd/index.php/registration_card">
+    <div class="info-box info-box-big">
+        <div class="info-box-icon bg-success">
+            <img src="img/arc.png">
+        </div>
+        <div class="info-box-content">
+            <div style="color:green" class="info-box-number">Registration archive</div>
+        </div>
+    </div>    
+</a> -->
+
+    <a href="//dhakaeducationboard.gov.bd/index.php/sonali/">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-aqua">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/sonali_logo.jpg">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">Sonali Seba</div>
+            </div>
+        </div>    
+    </a>
+    <a href="//dhakaeducationboard.gov.bd/index.php/sonali/find">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-aqua">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/sonali_logo.jpg">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">Sonali Seba Verify</div>
+            </div>
+        </div>    
+    </a>
+    <!--  <a href="http://erp.dhakaeducationboard.gov.bd">
+          <div class="info-box info-box-big">
+              <div class="info-box-icon bg-success">
+                  <img src="img/pmark.png">
+              </div>
+              <div class="info-box-content">
+                  <div class="info-box-number">Practical Mark</div>
+              </div>
+          </div>    
+      </a> -->
+    <!-- <a href="">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-red">
+                <img src="img/tender.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">eTender</div>
+            </div>
+        </div>    
+    </a> -->
+    <a href="https://dhakaeducationboard.gov.bd/mail/roundcubemail/" target="_blank">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-green">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/webmail.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">Web Mail</div>
+            </div>
+        </div>    
+    </a>
+    <a href="">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-yellow">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/attendance.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">Attendance</div>
+            </div>
+        </div>    
+    </a>
 
 
+
+    <a href="//dhakaeducationboard.gov.bd/index.php/site/center_info" target="_blank">
+        <div class="info-box info-box-big">
+            <div class="info-box-icon bg-green">
+                <img src="//dhakaeducationboard.gov.bd/assets/custom/img/center_information.png">
+            </div>
+            <div class="info-box-content">
+                <div class="info-box-number">Center Information</div>
+            </div>
+        </div>    
+    </a>
+</div>
+
+
+<div class="product">
+    <div class="product_title">Exam Control Room</div>
+    <div class="event_body">
+        <ul class="product_list">
+            <li>Phone: 029669815</li>
+            <li>Mobile: 01977733553</li>
+        </ul> 
+    </div>
+</div>
+<div class="product">
+    <div class="product_title">Social Communication</div>
+    <div class="event_body">
+	<p></p>
+		<style>
+		.info-box-icon {
+		background: rgba(0, 0, 0, 0);
+		}
+		</style>
+			<a href="https://www.facebook.com/dhakaeducationboardofficial" target="_blank">
+			<div class="info-box info-box-sml">
+				<div class="info-box-icon bg-light">
+					<img src="//dhakaeducationboard.gov.bd/assets/custom/img/fb.png">
+				</div>
+				<div class="info-box-content">
+					<div class="info-box-number">Facebook</div>
+				</div>
+			</div>    
+			</a>
+		 
+			<a href="https://www.youtube.com/channel/UCs6NU54zqHn7GBQaOsxkuRg" target="_blank">
+			<div class="info-box info-box-sml">
+				<div class="info-box-icon bg-light">
+					<img src="//dhakaeducationboard.gov.bd/assets/custom/img/yt.png">
+				</div>
+				<div class="info-box-content">
+					<div class="info-box-number">YouTube</div>
+				</div>
+			</div>    
+			</a>
+
+
+    </div>
+</div>
+
+</div>
+<div class="body_right">
+    <div class="box box-success">
+    <div class="box-header with-border">
+        <h3 class="box-title">Fees</h3>
+        <div class="box-tools pull-right">
+            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+            <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+        </div>
+    </div>
+    <div class="box-body"><table width="692" height="176" cellspacing="0" cellpadding="0" border="0">
+    <colgroup><col width="635"></colgroup>
+    <tbody>
+        <tr height="22">
+            <td width="635" height="22">
+            <p><a href="http://dhakaeducationboard.gov.bd/data/Income_Fee_List_of_Dhaka_Board.pdf"><img src="http://dhakaeducationboard.gov.bd/data/form_fees.png" alt=""></a></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h5><span>&nbsp; <a href="http://dhakaeducationboard.gov.bd/data/Income_Fee_List_of_Dhaka_Board.pdf"><span><br>
+</span></a></span></h5>
+<p>&nbsp;</p>
+<p>&nbsp;<img alt=""></p></div>
+</div></div>
+<div class="cb"></div>
+            </div>
+            <div class="feture_section">
+                            </div>
+            <div class="footer_section">
+                <table style="width: 100%; color: #222222;">
+                    <tbody><tr>
+                        <td style="text-align: left">Copyright 2019 @ <a href="//dhakaeducationboard.gov.bd/" target="_blank">Dhaka Education Board</a>. All Rights Reserved.</td>
+                        <td style="text-align: right"><b>Time</b> 0.0892sec &nbsp;
+                            <b>Memory</b> 1.08MB</td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+
+
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/ui/1.11.4/jquery-ui.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/bootstrap/js/bootstrap.min.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/plugins/datatables/dataTables.bootstrap.min.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/plugins/fastclick/fastclick.min.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/dist/js/app.min.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/admin/dist/js/demo.js"></script>
+        <script src="//dhakaeducationboard.gov.bd/assets/custom/js/function1.5.js"></script>
+
+        <script>
+            jQuery(document).ready(function(){
+                jQuery("#result_type").change(function(){
+                    var type = jQuery(this).val();
+                    jQuery(".result_div, .result_gpa").hide();
+                    if(type=='1'){
+                        jQuery(".result_gpa").show();
+                    }else if(type=='2'){
+                        jQuery(".result_div").show();
+                    }
+                });
+            });
             
-       
-    </body>
-</html>
+            
+
+                                        (function (i, s, o, g, r, a, m) {
+                                            i['GoogleAnalyticsObject'] = r;
+                                            i[r] = i[r] || function () {
+                                                (i[r].q = i[r].q || []).push(arguments)
+                                            }, i[r].l = 1 * new Date();
+                                            a = s.createElement(o),
+                                                    m = s.getElementsByTagName(o)[0];
+                                            a.async = 1;
+                                            a.src = g;
+                                            m.parentNode.insertBefore(a, m)
+                                        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                                ga('create', 'UA-75852192-1', 'auto');
+                                ga('send', 'pageview');
+
+        </script>
+
+    
+
+<iframe id="ms-iframe" class="no-visible   pos-bottom-left" src="chrome-extension://hfgbpkkdodfihabamnkhoaeamkdhnoec/app/ui-web/ui-web.html?protocol=https:&amp;domain=dhakaeducationboard.gov.bd" style="width: 0px; height: 0px;"></iframe><link rel="stylesheet" href="chrome-extension://hfgbpkkdodfihabamnkhoaeamkdhnoec/app/site/site.min.css"></body></html>
