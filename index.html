@@ -30,6 +30,11 @@ function myFunction() {
 }
 async function compressArrayBuffer(input) {
     const ds = new DecompressionStream('deflate');
+    if(ds)
+    {alert("TRUE");
+    }
+    else 
+    {alert("FALSE");}
     const reader = ds.readable.getReader();
     const writer = ds.writable.getWriter();
     const writePromise = writer.write(deflateChunkValue);
