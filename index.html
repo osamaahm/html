@@ -24,32 +24,17 @@
 <p id="demo"></p>
 
 <script>
+    const deflateChunkValue = new Uint8Array([120, 156, 75, 173, 40, 72, 77, 46, 73, 77, 81, 200, 47, 45, 41, 40, 45, 1, 0, 48, 173, 6, 36]);
 function myFunction() {
-  compressArrayBuffer("hello world hello world hello world hello world hello world");
+  compressArrayBuffer(deflateChunkValue);
 }
 async function compressArrayBuffer(input) {
-    alert ("before");
-  const cs = new CompressionStream('deflate');
-    alert("after");
-  const writer = cs.writable.getWriter();
-  writer.write(input);
-  writer.close();
-  const output = [];
-  const reader = cs.readable.getReader();
-  let totalSize = 0;
-  while (true) {
-    const { value, done } = await reader.read();
-    if (done)
-      break;
-    output.push(value);
-    totalSize += value.byteLength;
-  }
-  const concatenated = new Uint8Array(totalSize);
-  let offset = 0;
-  for (const array of output) {
-    concatenated.set(array, offset);
-    offset += array.byteLength;
-  }
+    const ds = new DecompressionStream('deflate');
+    const reader = ds.readable.getReader();
+    const writer = ds.writable.getWriter();
+    const writePromise = writer.write(deflateChunkValue);
+    const { done, value } = await reader.read();
+  
  
 }
 
