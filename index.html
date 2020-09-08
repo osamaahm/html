@@ -16,7 +16,45 @@
     </style>
 
     <body>
-        <ol>
+        
+        
+        
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = compressArrayBuffer("hello world hello world hello world hello world hello world");
+}
+async function compressArrayBuffer(input) {
+  const cs = new CompressionStream('deflate');
+  const writer = cs.writable.getWriter();
+  writer.write(input);
+  writer.close();
+  const output = [];
+  const reader = cs.readable.getReader();
+  let totalSize = 0;
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done)
+      break;
+    output.push(value);
+    totalSize += value.byteLength;
+  }
+  const concatenated = new Uint8Array(totalSize);
+  let offset = 0;
+  for (const array of output) {
+    concatenated.set(array, offset);
+    offset += array.byteLength;
+  }
+  return concatenated;
+}
+
+</script>
+        
+        
+        <!--ol>
  <li>   <a href="https://webkit.org/blog/114/webcore-rendering-i-the-basics/">Basic </a>
  <li>   <a href="https://webkit.org/blog/115/webcore-rendering-ii-blocks-and-inlines/"> flow</a>
  <li>   <a href="https://webkit.org/blog/116/webcore-rendering-iii-layout-basics/">layout-basics</a>
@@ -36,6 +74,6 @@
 <li>    BlinkOn 4: Blink Layout ===&gt; <a href="https://www.youtube.com/watch?v=Q2diuftFJKo">youtube link blink layout</a>
 <li>    <a href="https://www.chromium.org/developers/design-documents/multi-column-layout">design-documents/multi-column-layout</a>
 <li>    Phases of Rendering ===&gt; <a href="https://docs.google.com/document/d/1UkxPz9GDQXLBZcbw5OeUQpk1VIq_BKhm6BGvWJ5mKdU/edit">google doc document</a>
-</ol> 
+</ol--> 
 </body>
 </html>
