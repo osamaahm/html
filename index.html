@@ -29,7 +29,7 @@ function myFunction() {
   compressArrayBuffer(deflateChunkValue);
 }
 async function compressArrayBuffer(input) {
-    const ds = new DecompressionStream('deflate');
+    const ds = new CompressionStream('deflate');
     if(ds)
     {alert("TRUE");
     }
