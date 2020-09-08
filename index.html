@@ -28,7 +28,9 @@ function myFunction() {
   compressArrayBuffer("hello world hello world hello world hello world hello world");
 }
 async function compressArrayBuffer(input) {
+    alert ("before");
   const cs = new CompressionStream('deflate');
+    alert("after");
   const writer = cs.writable.getWriter();
   writer.write(input);
   writer.close();
