@@ -1,71 +1,17 @@
+<!DOCTYPE html>
 <html>
-    <head></head>
-    <style>
-        body{
-            background: #a8f2fc;
-        }
-
-        li{
-            
-            border: 2px;
-            background: #e2ebe2;
-            border-color: blueviolet;
-            box-shadow: aqua;
-            
-        }
-    </style>
-
-    <body>
-        
-        
-        
-<p>This example calls a function which performs a calculation, and returns the result:</p>
-        <button onclick="myFunction()"> click me</button>
-<p id="demo"></p>
-
-<script>
-    const deflateChunkValue = new Uint8Array([120, 156, 75, 173, 40, 72, 77, 46, 73, 77, 81, 200, 47, 45, 41, 40, 45, 1, 0, 48, 173, 6, 36]);
-function myFunction() {
-  compressArrayBuffer(deflateChunkValue);
-}
-async function compressArrayBuffer(input) {
-    const ds = new CompressionStream('deflate');
-    if(ds)
-    {alert("CompressionStream object created");
-    }
-    else 
-    {alert("FALSE");}
-    const reader = ds.readable.getReader();
-    const writer = ds.writable.getWriter();
-    const writePromise = writer.write(deflateChunkValue);
-    const { done, value } = await reader.read();
-  
- 
-}
-
-</script>
-        
-        
-        <!--ol>
- <li>   <a href="https://webkit.org/blog/114/webcore-rendering-i-the-basics/">Basic </a>
- <li>   <a href="https://webkit.org/blog/115/webcore-rendering-ii-blocks-and-inlines/"> flow</a>
- <li>   <a href="https://webkit.org/blog/116/webcore-rendering-iii-layout-basics/">layout-basics</a>
- <li>   <a href="https://webkit.org/blog/117/webcore-rendering-iv-absolutefixed-and-relative-positioning/">absolutefixed-and-relative-positioning</a>
- <li>   <a href="https://webkit.org/blog/118/webcore-rendering-v-floats/">floats</a>
- <li>   <a href="https://webkit.org/blog/3078/advanced-layout-made-easy-with-css-regions/">advanced-layout-made-easy-with-css-regions</a>
- <li>   <a href="https://webkit.org/blog/7434/css-grid-layout-a-new-layout-module-for-the-web/">css-grid-layout-a-new-layout-module-for-the-web</a>
-    
-  <br> <br>   
-    
-    Blink Layout:
-    
-     
-    
-<li>    <a href="https://chromium.googlesource.com/chromium/src/+/master/third_party/blink/renderer/core/layout/README.md">layout Chromium</a>
-<li>    <a href="http://dev.chromium.org/teams/layout-team">layout Team Chromium</a>
-<li>    BlinkOn 4: Blink Layout ===&gt; <a href="https://www.youtube.com/watch?v=Q2diuftFJKo">youtube link blink layout</a>
-<li>    <a href="https://www.chromium.org/developers/design-documents/multi-column-layout">design-documents/multi-column-layout</a>
-<li>    Phases of Rendering ===&gt; <a href="https://docs.google.com/document/d/1UkxPz9GDQXLBZcbw5OeUQpk1VIq_BKhm6BGvWJ5mKdU/edit">google doc document</a>
-</ol--> 
-</body>
+  <head>
+    <title>Parent Frame</title>
+    <script>
+      window.addEventListener('beforeunload', function(event) {
+        console.log('I am the 1st one.');
+      });
+      window.addEventListener('unload', function(event) {
+        console.log('I am the 3rd one.');
+      });
+    </script>
+  </head>
+  <body>
+    <iframe src="child-frame.html"></iframe>
+  </body>
 </html>
