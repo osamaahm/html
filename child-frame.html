@@ -4,9 +4,11 @@
     <title>Child Frame</title>
     <script>
       window.addEventListener('beforeunload', function(event) {
+        alert('I am the 2nd one "beforeunload"');
         console.log('I am the 2nd one.');
       });
       window.addEventListener('unload', function(event) {
+        alert('I am the 4nd one "unload"');
         console.log('I am the 4th and last one…');
       });
     </script>
