@@ -2,18 +2,24 @@
 <html>
   <head>
     <title>Parent Frame</title>
-    <script>
-      window.addEventListener('beforeunload', function(event) {
-        alert("1-beforeunload");
-        console.log('I am the 1st one.');
-      });
-      window.addEventListener('unload', function(event) {
-        alert("3-unload");
-        console.log('I am the 3rd one.');
-      });
-    </script>
+    
   </head>
   <body>
-    <iframe src="child-frame.html"></iframe>
+    <div style="width: 500px; margin: auto;">
+<object style="width: 500px; height: 450px; margin: auto;">
+<param name="allowScriptAccess" value="sameDomain" >
+<param name="movie" value="yourvideo.swf" >
+<param name="quality" value="high" >
+<param name="scale" value="noscale" >
+<param name="bgcolor" value="#bcbcbc" >
+<embed src="yourvideo.swf" quality="high"
+scale="noscale" bgcolor="#bcbcbc"
+name="oth_splash"
+style="width: 500px; height: 450px; margin: auto;"
+allowScriptAccess="sameDomain"
+type="application/x-shockwave-flash"
+pluginspage="http://www.macromedia.com/go/getflashplayer" >
+</embed> </object>
+</div>
   </body>
 </html>
