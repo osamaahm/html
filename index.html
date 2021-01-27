@@ -1,36 +1,46 @@
-(33 sloc)  982 Bytes
- 
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <if expr="not is_android">
-      <script>
-        function setMessage(msg) {
-          document.getElementById('message').textContent = msg;
-        }
-        function notifyDidFinishLoading() {
-          if (plugin.didFinishLoading)
-            plugin.didFinishLoading();
 
-          if (plugin.didFinishIconRepositionForTesting)
-            plugin.didFinishIconRepositionForTesting();
+ 
+<html>
+<head>
+<script src="https://api.map.baidu.com/api?v=2.0&ak=IDdnBdYZZl8uulDc9tKPUrGM8GmIiugv"></script> 
+</head>
+
+<body>
+
+<div id="allmap"></div>
+<script type="text/javascript">
+         var map = new BMap.Map("allmap");//Create a Map instance, note that the page must have a div with an id of allmp
+         
+ 
+    var geolocation = new BMap.Geolocation();
+         var gc = new BMap.Geocoder();//Create a geocoder
+         // Open SDK assisted positioning
+    geolocation.enableSDKLocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            map.addOverlay(mk);
+            map.panTo(r.point);
+                         alert('Your location: ' + r.point.lng + ',' + r.point.lat);
+ 
+            var pt = r.point;   
+                         map.panTo(pt);//Mobile map center point
+                         //alert(r.point.lng);//X axis
+                         //alert(r.point.lat);//Y axis 
+ 
+            gc.getLocation(pt, function(rs){    
+                var addComp = rs.addressComponents;
+                //alert(addComp.city);
+               alert(addComp.province + addComp.city + addComp.district + addComp.street + addComp.streetNumber);    
+            });  
+ 
         }
-      </script>
-    </if>
-    <if expr="is_android">
-      <script>
-        function notifyDidFinishLoading() {}
-      </script>
-    </if>
-    <link rel="stylesheet" href="plugin_placeholders.css"></link>
-  </head>
-  <body id="t" onload="notifyDidFinishLoading();">
-    <div i18n-values="title:name" id="outer">
-      <img class="icon"
-           src="extension.svg">
-      <h1 id="message" i18n-content="message"></h1>
-    </div>
-  </body>
+        else {
+            alert('failed'+this.getStatus());
+        }        
+    });
+</script>
+
+
+</body>
 </html>
