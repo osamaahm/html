@@ -1,31 +1,20 @@
-<html>
+<!doctype html>
+<head>
 <style>
-body {
-	background-color: #d70;
-}
-
-@media (prefers-color-scheme: light) {
-	body {
-		background-color: #0f0;
+	div{
+		font-family:Helvetica,sans-serif; line-height:1.1;
+  		width:3.1em; padding:.2em; border:solid .1em black; margin:1em 0;
 	}
-}
-
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #00f;
-	}
-}
 </style>
-
 <body>
-
-<h1>@media (prefers-color-scheme) example</h1>
-<p>
-	The <code>prefers-color-scheme</code> media query lets you create light and dark color schemes based on your system preferences.
-<p>
-<p>
-	In browsers that support <code>prefers-color-scheme</code> queries, the background of this page will be green.
-	Otherwise, the background will be orange.
-</p>
+<h3>CSS OVERFLOW DEMO</h3>
+<div>
+	CSS IS AWESOME, YES
+</div>
+<div style="text-overflow:clip; overflow:hidden">
+	CSS IS AWESOME, YES
+</div>
+<div style="text-overflow:ellipsis; overflow:hidden">
+	CSS IS AWESOME, YES
+</div>
 </body>
-</html>
